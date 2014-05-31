@@ -2,9 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>V-JS</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
   <link rel="stylesheet" href="css/style.css">
+  <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
 </head>
 <body>
   <div class="navbar navbar-inverse navbar-fixed-top">
@@ -30,6 +35,50 @@
         </div><!--/.nav-collapse -->
       </div>
     </div>
+  </div>
+  <!--/ .nav -->
+
+  <div class="container-fluid clearfix" id="main-content">
+    <div class="row-fluid">
+      <div class="span2" id="sidebar">
+        <div class="well sidebar-nav">
+          <ul class="nav nav-list">
+            <li class="nav-header">Modules</li>
+            <li class="active"><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+          </ul>
+        </div><!--/.well -->
+      </div><!--/span2 sidebar-->
+      <div class="span10" id="page-content">
+        <div class="row-fluid">
+          <div class="span6">
+            <div class="well">
+              <textarea name="textarea-1" id="textarea-1" cols="30" rows="5"></textarea>
+            </div>
+            <div class="well">
+              <textarea name="textarea-2" id="textarea-2" cols="30" rows="20"></textarea>
+            </div>
+          </div>
+          <div class="span6">
+            <div class="well">
+              <textarea name="textarea-3" id="textarea-3" cols="30" rows="5"></textarea>
+            </div>
+            <div class="well">
+              <textarea name="textarea-4" id="textarea-4" cols="30" rows="20"></textarea>
+            </div>
+          </div>
+        </div>
+      </div><!--/span9 content-->
+    </div><!--/row-->
+
+    <hr>
+
+    <footer id="pageFooter">
+      <p>© 2014</p>
+    </footer>
+
   </div>
 
   <script src="js/jquery.min.js"></script>
